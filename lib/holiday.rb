@@ -67,38 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   
-  holiday_hash.each do |season, data|
-    binding.pry
-    if season == ":winter"
-      puts "Winter:"
-      binding.pry
-      data.each do |holiday, supplies|
-        binding.pry
-        if holiday == ":christmas"
-          puts "Christmas: "
-          puts "#{supplies}"
-        else
-          puts "New Years: "
-          puts "#{supplies}"
-        end
-      end
-    elsif season == ":summer"
-      puts "Summer:"
-      data.each do |holiday, supplies|
-        puts "Fourth Of July: #{supplies}"
-      end
-    elsif season == ":fall"
-      puts "Fall:"
-      data.each do |holiday, supplies|
-        puts "Thanksgiving: #{supplies}"
-      end
-    else
-      puts "Spring:"
-      data.each do |holiday, supplies|
-        puts "Memorial Day: #{supplies}"
-      end
-    end
-  end
+  winter_supplies(holiday_hash)
 
 end
 
