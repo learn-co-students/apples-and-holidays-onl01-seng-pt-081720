@@ -78,6 +78,7 @@ def all_supplies_in_holidays(holiday_hash)
           puts "New Years: "
           puts "#{supplies}"
         end
+      end
     elsif season == ":summer"
       puts "Summer:"
       puts "Fourth Of July: #{supplies}"
