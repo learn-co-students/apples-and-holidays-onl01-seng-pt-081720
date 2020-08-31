@@ -68,10 +68,10 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   all_holidays = ""
   
-  all_holidays << holiday_hash[:winter].values.flatten.split(" ")
-  all_holidays << holiday_hash[:summer].values.flatten.split(" ")
-  all_holidays << holiday_hash[:fall].values.flatten.split(" ")
-  all_holidays << holiday_hash[:spring].values.flatten.split(" ")
+  all_holidays << holiday_hash[:winter].values.flatten.join()
+  all_holidays << holiday_hash[:summer].values.flatten.join()
+  all_holidays << holiday_hash[:fall].values.flatten.join()
+  all_holidays << holiday_hash[:spring].values.flatten.join()
   
   puts all_holidays
 
