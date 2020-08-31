@@ -71,6 +71,7 @@ def all_supplies_in_holidays(holiday_hash)
     
     if season == ":winter"
       puts "Winter:"
+      binding.pry
       data.each do |holiday, supplies|
         binding.pry
         if holiday == ":christmas"
