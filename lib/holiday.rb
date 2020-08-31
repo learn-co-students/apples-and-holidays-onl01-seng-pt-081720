@@ -88,6 +88,9 @@ def all_holidays_with_bbq(holiday_hash)
     data.each do |holiday, supplies|
       if supplies.include?("BBQ")
         puts season.to_s
+      end
+    end
+  end
 
 end
 
