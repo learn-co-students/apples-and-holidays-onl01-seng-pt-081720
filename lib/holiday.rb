@@ -68,14 +68,14 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   
   puts "Winter:"
-  puts "Christmas: #{holiday_hash[:winter][:christmas].flatten.join(", ")}"
-  puts "New Years: #{holiday_hash[:winter][:new_years].flatten}"
+  puts "  Christmas: #{holiday_hash[:winter][:christmas].flatten.join(", ")}"
+  puts "  New Years: #{holiday_hash[:winter][:new_years].flatten}"
   puts "Summer:"
-  puts "Fourth Of July: #{holiday_hash[:summer].values.flatten.join(", ")}"
+  puts "  Fourth Of July: #{holiday_hash[:summer].values.flatten.join(", ")}"
   puts "Fall:"
-  puts "Thanksgiving: #{holiday_hash[:fall].values.flatten}"
+  puts "  Thanksgiving: #{holiday_hash[:fall].values.flatten}"
   puts "Spring:"
-  puts "Memorial Day: #{holiday_hash[:spring].values.flatten}"
+  puts "  Memorial Day: #{holiday_hash[:spring].values.flatten}"
   
   
 end
