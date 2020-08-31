@@ -68,10 +68,11 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   
   holiday_hash.each do |season, data|
-    binding.pry
+    
     if season == ":winter"
       puts "Winter:"
       data.each do |holiday, supplies|
+        binding.pry
         if holiday == ":christmas"
           puts "Christmas: "
           puts "#{supplies}"
