@@ -73,7 +73,7 @@ def all_supplies_in_holidays(holiday_hash)
   all_holidays << holiday_hash[:fall].values.flatten
   all_holidays << holiday_hash[:spring].values.flatten
   
-  return all_holidays
+  puts all_holidays
 
 end
 
