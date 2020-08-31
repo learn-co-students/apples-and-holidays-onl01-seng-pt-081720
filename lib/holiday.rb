@@ -66,10 +66,14 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
+  all_holidays = []
   
-  winter_supplies = []
+  all_holidays << holiday_hash[:winter].values.flatten
+  all_holidays << holiday_hash[:summer].values.flatten
+  all_holidays << holiday_hash[:fall].values.flatten
+  all_holidays << holiday_hash[:spring].values.flatten
   
-  winter_supplies(holiday_hash)
+  return all_holidays
 
 end
 
